@@ -24,7 +24,7 @@
 
 /*  ==== ECMAScript 6 variant ====  */
 
-var aggregation = (base, ...mixins) => {
+export var aggregation = (base, ...mixins) => {
 
     /*  create aggregation class  */
     let aggregate = class __Aggregate extends base {
@@ -59,6 +59,4 @@ var aggregation = (base, ...mixins) => {
 
     return aggregate
 }
-
-module.exports = aggregation
 
